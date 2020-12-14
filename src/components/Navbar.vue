@@ -74,6 +74,7 @@
  More Projects ? <img class="h-5 w-5 inline" src="assets\GitHub-Mark-32px.png" />
 </a>
 </div>
+<p class="text-gray-500 px-28 h-24 md:px-80">&copy 2020 Dhanush Pothulapati</p>
 </div>
 </div>
 </template>
