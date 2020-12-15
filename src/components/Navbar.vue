@@ -41,12 +41,10 @@
 <div class="h-80 w-4/5 border-2 md:w-1/2 md:h-96">
      
 </div>
-<div class="h-full w-10/12 md:w-11/12 px-12 py-8">
-  <span id="projects" class="md:px-96 md:from-pink-400 md:to-blue-500 font-black bg-clip-text text-transparent bg-gradient-to-r from-green-500  to-blue-500 text-5xl px-8">PROJECTS</span>
+<div class="h-full w-screen text-center py-8">
+  <span id="projects" class=" font-black bg-clip-text text-transparent bg-gradient-to-r from-green-500  to-blue-500 text-5xl">PROJECTS</span>
   <br/>
-  <br/>
-  <br/>
-  <div v-for="project in projects" :key="project.id" class="md:m-5 m-10 mx-1 h-80 w-80 md:float-left rounded-xl shadow-lg py-6 bg-gradient-to-r from-blue-400  to-purple-500">
+  <div v-for="project in projects" :key="project.id" class="md:m-14 m-20  h-80 w-80 md:float-left rounded-xl shadow-lg py-6 bg-gradient-to-r from-blue-400  to-purple-500">
        <div class="h-16 w-full py-3 m-auto">
          <span class="text-2xl font-black px-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-700  to-pink-700">{{project.Name}}</span>
        </div>
@@ -68,14 +66,14 @@
        </div>
   </div>
 </div>
-<div class="md:px-28">
-<div class="px-32 md:px-80 md:w-full h-24">
+
+<div class="text-center w-screen h-7">
   <a href="https://github.com/Dhanushreddy09" target="blank" class="bg-pink-600 hover:bg-pink-700 focus:outline-none text-white font-bold py-2 px-4 rounded-xl shadow-lg">
  More Projects ? <img class="h-5 w-5 inline" src="assets\GitHub-Mark-32px.png" />
 </a>
 </div>
-<p class="text-gray-500 px-28 h-24 md:px-80">&copy 2020 Dhanush Pothulapati</p>
-</div>
+<p class="text-gray-500 text-center w-screen ">&copy 2020 Dhanush Pothulapati</p>
+
 </div>
 </template>
 <script>
