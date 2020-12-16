@@ -1,23 +1,23 @@
 <template>
 <div class="flex flex-col md:flex-row flex-wrap h-full w-screen bg-gray-800 space-y-10 space-x-10">
   <div class="h-28 w-screen">
-    <div class="text-white text-opacity-70 px-5 md:px-32 py-8">
+    <div class="text-white text-opacity-70 px-5 md:px-32 py-8  ">
       <ul class="space-x-8">
-        <li class="float-left px-3  cursor-pointer hover:bg-green-50 hover:text-black rounded-md hover:shadow-lg">ABOUT</li>
+        <li class="float-left px-3 cursor-pointer hover:bg-green-50 hover:text-black rounded-md hover:shadow-lg">ABOUT</li>
     <li class="float-left px-3  cursor-pointer hover:bg-green-50 hover:text-black rounded-md hover:shadow-lg"><a href="#projects">PROJECTS</a></li>
      <li class="float-right px-3  cursor-pointer hover:shadow-lg">
       <a href="https://www.linkedin.com/in/dhanush-pothulapati-5236b2165/" target="blank">
-        <img class="h-7 w-17" src="assets\NicePng_linkedin-logo-png_233614.png" />
+        <img class="h-7 w-17" :src="linkedin" />
       </a>
     </li>
     <li class="float-right px-3  cursor-pointer hover:shadow-lg">
       <a href="https://twitter.com/Dhanushreddy09" target="blank">
-        <img class="h-7 w-17" src="assets\Twitter_Social_Icon_Circle_White.png" />
+        <img class="h-7 w-17" :src="twitter" />
       </a>
     </li>
     <li class="float-right px-3  cursor-pointer hover:shadow-lg">
       <a href="https://github.com/Dhanushreddy09" target="blank">
-        <img class="h-7 w-17" src="assets\GitHub-Mark-Light-32px.png" />
+        <img class="h-7 w-17" :src="github" />
       </a>
     </li>
       </ul>
@@ -66,20 +66,25 @@
        </div>
   </div>
 </div>
-
 <div class="text-center w-screen h-7">
   <a href="https://github.com/Dhanushreddy09" target="blank" class="bg-pink-600 hover:bg-pink-700 focus:outline-none text-white font-bold py-2 px-4 rounded-xl shadow-lg">
  More Projects ? <img class="h-5 w-5 inline" src="assets\GitHub-Mark-32px.png" />
 </a>
 </div>
 <p class="text-gray-500 text-center w-screen ">&copy 2020 Dhanush Pothulapati</p>
-
 </div>
+
 </template>
 <script>
+import linkedinimage from '../../assets/NicePng_linkedin-logo-png_233614.png'
+import githubimage from '../../assets/GitHub-Mark-Light-32px.png'
+import twitterimage from '../../assets/Twitter_Social_Icon_Circle_White.png'
 export default {
   data() {
     return {
+      linkedin:linkedinimage,
+      github:githubimage,
+      twitter:twitterimage,
      projects:[
        {
          id:1,
