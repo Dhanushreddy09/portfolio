@@ -61,14 +61,14 @@
  Live Demo  <i class="fa fa-play text-sm text-yellow-400" aria-hidden="true"></i>
 </a>
 <a :href="project.gitlink" target="blank" class=" bg-pink-600 hover:bg-pink-700 focus:outline-none text-white font-bold py-2 px-4 rounded-xl shadow-lg">
- Github <img class="h-5 w-5 inline" src="assets\GitHub-Mark-32px.png" />
+ Github <img class="h-5 w-5 inline" :src="markgithub" />
 </a>
        </div>
   </div>
 </div>
 <div class="text-center w-screen h-7">
   <a href="https://github.com/Dhanushreddy09" target="blank" class="bg-pink-600 hover:bg-pink-700 focus:outline-none text-white font-bold py-2 px-4 rounded-xl shadow-lg">
- More Projects ? <img class="h-5 w-5 inline" src="assets\GitHub-Mark-32px.png" />
+ More Projects ? <img class="h-5 w-5 inline" :src="markgithub" />
 </a>
 </div>
 <p class="text-gray-500 text-center w-screen ">&copy 2020 Dhanush Pothulapati</p>
@@ -79,12 +79,14 @@
 import linkedinimage from '../../assets/NicePng_linkedin-logo-png_233614.png'
 import githubimage from '../../assets/GitHub-Mark-Light-32px.png'
 import twitterimage from '../../assets/Twitter_Social_Icon_Circle_White.png'
+import githubmark from '../../assets/GitHub-Mark-32px.png'
 export default {
   data() {
     return {
       linkedin:linkedinimage,
       github:githubimage,
       twitter:twitterimage,
+      markgithub:githubmark,
      projects:[
        {
          id:1,
