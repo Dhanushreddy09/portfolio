@@ -4,7 +4,7 @@
 <div class="text-center py-8">
   <span id="projects" class=" font-black bg-clip-text text-transparent bg-gradient-to-r from-green-500  to-blue-500 text-5xl">PROJECTS</span>
   <br/>
-  <div v-for="project in projects" :key="project.id" class="md:m-14 m-16  h-80 w-80 md:float-left rounded-xl shadow-lg py-6 bg-gradient-to-r from-blue-400  to-purple-500">
+  <div v-for="project in projects" :key="project.id" class="md:m-14 m-10  h-80 w-80 md:float-left rounded-xl shadow-lg py-6 bg-gradient-to-r from-blue-400  to-purple-500">
        <div class="h-16 w-full py-3 m-auto">
          <span class="text-2xl font-black px-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-700  to-pink-700">{{project.Name}}</span>
        </div>
