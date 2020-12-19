@@ -7,22 +7,18 @@
     <li class="float-left cursor-pointer px-3 hover:bg-green-50 hover:text-black rounded-md hover:shadow-lg">BLOGS</li>
       </ul>
   </div>
- <div class="h-96 w-2/5 px-3  text-white text-opacity-60  md:px-16 ">
-     <div class="h-96 w-96 bg-green-50 rounded-xl shadow-lg">
-  <div class="h-96 w-96 m-auto max-w-full bg-pink-600 rounded-xl shadow-lg transform -rotate-6">
-     <p class="text-4xl font-black px-24 py-4">Hello, I'm</p>
-     <p class="text-5xl font-black px-4 py-4">Dhanush</p>
-     <p class="text-5xl font-black px-20 py-0">Pothulapati</p>
-     <p class="text-xl px-14 py-10">A promising web developer</p>
-     <div class="px-32">
+ <div class="h-full text-center text-white content-around">
+   <div>
+     <p class="font-black text-3xl md:text-5xl text-opacity-60">Hello, I'm</p>
+     <br/>
+     <p class="font-black text-3xl md:text-5xl text-opacity-60">Dhanush Potulapati</p>
+     <br/>
      <button class="bg-blue-500 hover:bg-blue-600 focus:outline-none text-white font-bold py-2 px-4 rounded-xl shadow-lg">
   Resume
 </button>
-</div>
-  </div>
-  </div>
-</div>
+ </div>
  
+</div>
 </div>
 
 </template>
