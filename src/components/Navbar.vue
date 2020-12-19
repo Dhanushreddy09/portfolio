@@ -9,9 +9,9 @@
   </div>
  <div class="h-full text-center text-white content-around">
    <div>
-     <p class="font-black text-3xl md:text-5xl text-opacity-60">Hello, I'm</p>
+     <p class="font-black text-4xl md:text-5xl text-opacity-60">Hello, I'm</p>
      <br/>
-     <p class="font-black text-3xl md:text-5xl text-opacity-60">Dhanush Potulapati</p>
+     <p class="font-black text-4xl md:text-5xl text-opacity-60">Dhanush Potulapati</p>
      <br/>
      <button class="bg-blue-500 hover:bg-blue-600 focus:outline-none text-white font-bold py-2 px-4 rounded-xl shadow-lg">
   Resume
