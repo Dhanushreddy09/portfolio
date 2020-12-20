@@ -43,11 +43,18 @@
  </ul>
  </div>
 </div>
-<div class="text-center py-8">
+  <div class="w-3/4 m-auto">
   <span id="about" class=" font-black bg-clip-text text-transparent bg-gradient-to-r from-green-500  to-blue-500 text-5xl">ABOUT</span>
+  <br/>
+  <br/>
+  <i class="fa fa-clock text-white text-lg text-opacity-60" aria-hidden="true"> one minute read</i>
+  <br/>
+  <br/>
+  <p class="text-white text-xl text-opacity-70 text-left">Hey! My name is Dhanush Pothualapati, currently I am pursuing undergraduation in computer science from Lovely
+    Professional University, Punjab, India.
+  </p>
 </div>
 </div>
-
 </template>
 <script>
 import linkedinimage from '../../assets/NicePng_linkedin-logo-png_233614.png'
