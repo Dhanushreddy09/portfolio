@@ -55,7 +55,7 @@
   <br/>
   <br/>
   <br/>
-  <p class="text-white md:text-xl text-md text-opacity-70 text-justify tracking-widest">
+  <p class="text-white md:text-xl text-md  text-opacity-70 text-justify tracking-widest">
     Hey! My name is Dhanush Pothualapati, currently I am pursuing undergrads in computer science from Lovely
     Professional University, Punjab, India.
   </p>
@@ -72,10 +72,10 @@
 </div>
 <br/>
 <br/>
-<div class="text-center py-8">
+<div class="text-center py-6">
   <span id="projects" class=" font-black bg-clip-text text-transparent bg-gradient-to-r from-green-500  to-blue-500 text-5xl">PROJECTS</span>
-  <br/>
-  <div v-for="project in projects" :key="project.id" class="md:m-14 m-10 md:inline-block h-80 w-80 rounded-xl shadow-lg py-6 bg-gradient-to-r from-blue-400  to-purple-500">
+  <div class="space-y-10  py-16">
+  <div v-for="project in projects" :key="project.id" class="md:m-14 m-auto  md:inline-block h-80 w-80 rounded-xl shadow-lg py-6 bg-gradient-to-r from-blue-400  to-purple-500">
        <div class="h-16  py-3 m-auto">
          <span class="text-2xl font-black px-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-700  to-pink-700">{{project.Name}}</span>
        </div>
@@ -93,11 +93,12 @@
 </a>
        </div>
   </div>
-</div>
-<div class="text-center h-14">
+  <div class="text-center h-14">
   <a href="https://github.com/Dhanushreddy09" target="blank" class="bg-pink-600 hover:bg-pink-700 focus:outline-none text-white font-bold py-2 px-4 rounded-xl shadow-lg">
  More Projects ? <img class="h-5 w-5 inline" :src="markgithub" />
 </a>
+</div>
+  </div>
 </div>
 <br/>
 <br/>
@@ -108,8 +109,8 @@
   <br/>
   <br/>
   <br/>
-  <div v-for="blog in blogs" :key="blog.id" class="py-6">
-  <a :href="blog.link" target="blank" class=" italic text-justify text-2xl text-white font-bold text-opacity-70">{{blog.id}}. {{blog.title}}</a>
+  <div v-for="blog in blogs" :key="blog.id" class="py-6 text-justify">
+  <a :href="blog.link" target="blank" class=" italic text-2xl text-white font-bold text-opacity-70">{{blog.id}}. {{blog.title}}</a>
   </div>
   </div>
   <div class="text-center py-8 text-opacity-60 h-24 text-white">&copy 2020, Dhanush Pothulapati</div>
@@ -157,11 +158,6 @@ export default {
     }
   },
   methods:{
-    livedemo(link){
-      if(link==''){
-        console.log("link ain't found")
-      }
-    }
   }
 }
 </script>
