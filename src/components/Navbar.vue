@@ -46,11 +46,12 @@
 </div>
 <br/>
 <br/>
-  <div class="w-3/4 m-auto">
+  <div class="w-3/4 m-auto md:min-h-screen">
   <span id="about" class=" font-black bg-clip-text text-transparent bg-gradient-to-r from-green-500  to-blue-500 text-5xl">ABOUT</span>
   <br/>
   <br/>
   <i class="fa fa-clock text-white text-lg text-opacity-60 mx-3" aria-hidden="true"> one minute read</i>
+  <br/>
   <br/>
   <br/>
   <p class="text-white text-md text-opacity-70 text-justify tracking-widest">
@@ -70,15 +71,15 @@
 </div>
 <br/>
 <br/>
-<div class="text-center py-8 border-2">
+<div class="text-center py-8">
   <span id="projects" class=" font-black bg-clip-text text-transparent bg-gradient-to-r from-green-500  to-blue-500 text-5xl">PROJECTS</span>
   <br/>
-  <div v-for="project in projects" :key="project.id" class="md:m-14 m-10  h-80 w-80 md:float-left rounded-xl shadow-lg py-6 bg-gradient-to-r from-blue-400  to-purple-500">
-       <div class="h-16 w-full py-3 m-auto">
+  <div v-for="project in projects" :key="project.id" class="md:m-14 m-10 md:inline-block h-80 w-80 rounded-xl shadow-lg py-6 bg-gradient-to-r from-blue-400  to-purple-500">
+       <div class="h-16  py-3 m-auto">
          <span class="text-2xl font-black px-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-700  to-pink-700">{{project.Name}}</span>
        </div>
        <br/>
-       <div class="h-28 w-full py-3 text-center  m-auto break-words">
+       <div class="h-28 py-3 text-center  m-auto break-words">
          <span class="text-md font-medium">
           {{project.Description}}
          </span>
@@ -95,6 +96,12 @@
        </div>
   </div>
 </div>
+<div class="text-center h-14">
+  <a href="https://github.com/Dhanushreddy09" target="blank" class="bg-pink-600 hover:bg-pink-700 focus:outline-none text-white font-bold py-2 px-4 rounded-xl shadow-lg">
+ More Projects ? <img class="h-5 w-5 inline" :src="markgithub" />
+</a>
+</div>
+
 </div>
 </template>
 <script>
