@@ -4,7 +4,7 @@
       <ul class="md:space-x-10 space-x-8">
         <li class="float-left cursor-pointer px-3 hover:bg-green-50 hover:text-black rounded-md hover:shadow-lg"><a href="#about">ABOUT</a></li>
     <li class="float-left cursor-pointer px-3 hover:bg-green-50 hover:text-black rounded-md hover:shadow-lg"><a href="#projects">PROJECTS</a></li>
-    <li class="float-left cursor-pointer px-3 hover:bg-green-50 hover:text-black rounded-md hover:shadow-lg">BLOGS</li>
+    <li class="float-left cursor-pointer px-3 hover:bg-green-50 hover:text-black rounded-md hover:shadow-lg"><a href="#blogs">BLOGS</a></li>
       </ul>
   </div>
  <div class="h-full text-center text-white content-around py-20">
@@ -54,18 +54,19 @@
   <br/>
   <br/>
   <br/>
-  <p class="text-white text-md text-opacity-70 text-justify tracking-widest">
+  <br/>
+  <p class="text-white md:text-xl text-md text-opacity-70 text-justify tracking-widest">
     Hey! My name is Dhanush Pothualapati, currently I am pursuing undergrads in computer science from Lovely
     Professional University, Punjab, India.
   </p>
   <br/>
-  <p class="text-white text-md text-opacity-70 text-justify tracking-widest">
+  <p class="text-white md:text-xl text-md text-opacity-70 text-justify tracking-widest">
       I love to work on emerging technologies like Javascript frameworks, databases, etc. I love to design and 
       develop high level web applications. I am a part-time freelancer and I mostly blog about tech in dev community.
       I usually listen to music while programming and I play video games on weekends (How cool is that, right ?).
   </p>
   <br/>
-  <p class=" text-white text-md text-opacity-70 text-justify tracking-widest">
+  <p class=" text-white md:text-xl text-md text-opacity-70 text-justify tracking-widest">
     Feel free to reach me out on opportunities and feedback.
   </p>
 </div>
@@ -86,10 +87,7 @@
        </div>
        <br/>
        <br/>
-       <div class="px-3 space-x-12">
-         <a :href="project.livedemolink" target="blank" class="bg-pink-600 cursor-pointer hover:bg-pink-700 focus:outline-none text-white font-bold py-2 px-4 rounded-xl shadow-lg">
- Live Demo  <i class="fa fa-play text-sm text-yellow-400" aria-hidden="true"></i>
-</a>
+       <div class="">
 <a :href="project.gitlink" target="blank" class=" bg-pink-600 hover:bg-pink-700 focus:outline-none text-white font-bold py-2 px-4 rounded-xl shadow-lg">
  Github <img class="h-5 w-5 inline" :src="markgithub" />
 </a>
@@ -101,7 +99,20 @@
  More Projects ? <img class="h-5 w-5 inline" :src="markgithub" />
 </a>
 </div>
-
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="w-3/4 m-auto">
+  <span id="blogs" class=" font-black bg-clip-text text-transparent bg-gradient-to-r from-green-500  to-blue-500 text-5xl">BLOGS</span>
+  <br/>
+  <br/>
+  <br/>
+  <div v-for="blog in blogs" :key="blog.id" class="py-6">
+  <a :href="blog.link" target="blank" class=" italic text-justify text-2xl text-white font-bold text-opacity-70">{{blog.id}}. {{blog.title}}</a>
+  </div>
+  </div>
+  <div class="text-center py-8 text-opacity-60 h-24 text-white">&copy 2020, Dhanush Pothulapati</div>
 </div>
 </template>
 <script>
@@ -122,27 +133,35 @@ export default {
          Name:'Contact Manager',
          Description:'A simple javascript based Contact Management system.',
          gitlink:'https://github.com/Dhanushreddy09/Contact-Manager',
-         livedemolink:'https://drive.google.com/file/d/1Kul-ocq_T0-Gj6obitwgJhVGk9zJFORG/view?usp=sharing'
        },
        {
          id:2,
          Name:'Shopping List',
          Description:'A vue Js based To-do list app specificically designed for Shopping purpose.',
          gitlink:'https://github.com/Dhanushreddy09/Shopping-List',
-         livedemolink:'/'
        },
        {
          id:3,
          Name:'Find My Movies',
          Description:'A React js based Event management application designed to keep track of upcoming movie screenings.',
          gitlink:'https://github.com/Dhanushreddy09/Event-Manager',
-         livedemolink:'/'
        },
+     ],
+     blogs:[
+       {
+         id:1,
+         link:'https://dev.to/dhanushreddy09/digital-images-388f',
+         title:'Digital Images'
+       }
      ]
     }
   },
   methods:{
-    
+    livedemo(link){
+      if(link==''){
+        console.log("link ain't found")
+      }
+    }
   }
 }
 </script>
