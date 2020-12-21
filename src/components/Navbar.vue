@@ -50,12 +50,50 @@
   <span id="about" class=" font-black bg-clip-text text-transparent bg-gradient-to-r from-green-500  to-blue-500 text-5xl">ABOUT</span>
   <br/>
   <br/>
-  <i class="fa fa-clock text-white text-lg text-opacity-60" aria-hidden="true"> one minute read</i>
+  <i class="fa fa-clock text-white text-lg text-opacity-60 mx-3" aria-hidden="true"> one minute read</i>
   <br/>
   <br/>
-  <p class="text-white text-xl text-opacity-70 text-left">Hey! My name is Dhanush Pothualapati, currently I am pursuing undergraduation in computer science from Lovely
+  <p class="text-white text-md text-opacity-70 text-justify tracking-widest">
+    Hey! My name is Dhanush Pothualapati, currently I am pursuing undergrads in computer science from Lovely
     Professional University, Punjab, India.
   </p>
+  <br/>
+  <p class="text-white text-md text-opacity-70 text-justify tracking-widest">
+      I love to work on emerging technologies like Javascript frameworks, databases, etc. I love to design and 
+      develop high level web applications. I am a part-time freelancer and I mostly blog about tech in dev community.
+      I usually listen to music while programming and I play video games on weekends (How cool is that, right ?).
+  </p>
+  <br/>
+  <p class=" text-white text-md text-opacity-70 text-justify tracking-widest">
+    Feel free to reach me out on opportunities and feedback.
+  </p>
+</div>
+<br/>
+<br/>
+<div class="text-center py-8 border-2">
+  <span id="projects" class=" font-black bg-clip-text text-transparent bg-gradient-to-r from-green-500  to-blue-500 text-5xl">PROJECTS</span>
+  <br/>
+  <div v-for="project in projects" :key="project.id" class="md:m-14 m-10  h-80 w-80 md:float-left rounded-xl shadow-lg py-6 bg-gradient-to-r from-blue-400  to-purple-500">
+       <div class="h-16 w-full py-3 m-auto">
+         <span class="text-2xl font-black px-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-700  to-pink-700">{{project.Name}}</span>
+       </div>
+       <br/>
+       <div class="h-28 w-full py-3 text-center  m-auto break-words">
+         <span class="text-md font-medium">
+          {{project.Description}}
+         </span>
+       </div>
+       <br/>
+       <br/>
+       <div class="px-3 space-x-12">
+         <a :href="project.livedemolink" target="blank" class="bg-pink-600 cursor-pointer hover:bg-pink-700 focus:outline-none text-white font-bold py-2 px-4 rounded-xl shadow-lg">
+ Live Demo  <i class="fa fa-play text-sm text-yellow-400" aria-hidden="true"></i>
+</a>
+<a :href="project.gitlink" target="blank" class=" bg-pink-600 hover:bg-pink-700 focus:outline-none text-white font-bold py-2 px-4 rounded-xl shadow-lg">
+ Github <img class="h-5 w-5 inline" :src="markgithub" />
+</a>
+       </div>
+  </div>
 </div>
 </div>
 </template>
