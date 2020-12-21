@@ -9,6 +9,7 @@
   </div>
  <div class="h-full text-center text-white content-around py-20">
    <div>
+     <br/>
      <p class="font-black text-4xl md:text-5xl text-opacity-60 bg-clip-text text-transparent bg-gradient-to-r to-pink-500  from-purple-500">Hello, I'm</p>
      <br/>
      <p class="font-black text-4xl md:text-5xl text-opacity-60 bg-clip-text text-transparent bg-gradient-to-r to-indigo-600  from-blue-400">Dhanush Potulapati</p>
@@ -43,6 +44,8 @@
  </ul>
  </div>
 </div>
+<br/>
+<br/>
   <div class="w-3/4 m-auto">
   <span id="about" class=" font-black bg-clip-text text-transparent bg-gradient-to-r from-green-500  to-blue-500 text-5xl">ABOUT</span>
   <br/>
