@@ -1,13 +1,13 @@
 <template>
 <div class="bg-gray-800 h-full">
-    <div class="text-white h-28 grid justify-items-center text-opacity-70 py-10">
+    <div id="nav" class="text-white h-24 grid  justify-items-center text-opacity-70 py-10">
       <ul class="md:space-x-10 space-x-8">
         <li class="float-left cursor-pointer px-3 hover:bg-green-50 hover:text-black rounded-md hover:shadow-lg"><a href="#about">ABOUT</a></li>
     <li class="float-left cursor-pointer px-3 hover:bg-green-50 hover:text-black rounded-md hover:shadow-lg"><a href="#projects">PROJECTS</a></li>
     <li class="float-left cursor-pointer px-3 hover:bg-green-50 hover:text-black rounded-md hover:shadow-lg"><a href="#blogs">BLOGS</a></li>
       </ul>
   </div>
- <div class="h-full text-center text-white content-around py-20">
+ <div id="intro" class="min-h-screen text-center text-white content-around py-20">
    <div>
      <br/>
      <p class="font-black text-4xl md:text-5xl text-opacity-60 bg-clip-text text-transparent bg-gradient-to-r to-pink-500  from-purple-500">Hello, I'm</p>
@@ -44,8 +44,6 @@
  </ul>
  </div>
 </div>
-<br/>
-<br/>
   <div class="w-3/4 m-auto md:min-h-screen">
   <span id="about" class=" font-black bg-clip-text text-transparent bg-gradient-to-r from-green-500  to-blue-500 text-5xl">ABOUT</span>
   <br/>
@@ -74,7 +72,7 @@
 <br/>
 <div class="text-center py-6">
   <span id="projects" class=" font-black bg-clip-text text-transparent bg-gradient-to-r from-green-500  to-blue-500 text-5xl">PROJECTS</span>
-  <div class="space-y-10  py-16">
+  <div class="space-y-10 md:py-2 py-16">
   <div v-for="project in projects" :key="project.id" class="md:m-14 m-auto  md:inline-block h-80 w-80 rounded-xl shadow-lg py-6 bg-gradient-to-r from-blue-400  to-purple-500">
        <div class="h-16  py-3 m-auto">
          <span class="text-2xl font-black px-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-700  to-pink-700">{{project.Name}}</span>
@@ -156,8 +154,6 @@ export default {
        }
      ]
     }
-  },
-  methods:{
   }
 }
 </script>
