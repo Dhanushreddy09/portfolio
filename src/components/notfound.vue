@@ -12,7 +12,7 @@
     </div>
 </template>
 <script>
-import notfound from '../../assets/notfound.png'
+import notfound from '../../assets/notfound.jpg'
 export default {
     data(){
         return{
