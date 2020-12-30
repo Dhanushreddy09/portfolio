@@ -151,6 +151,11 @@ export default {
          id:1,
          link:'https://dev.to/dhanushreddy09/digital-images-388f',
          title:'Digital Images'
+       },
+       {
+         id:2,
+         link:'https://dev.to/dhanushreddy09/image-bluescreen-4nk8',
+         title:'Image BlueScreen'
        }
      ]
     }
