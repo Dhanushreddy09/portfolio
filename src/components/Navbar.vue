@@ -111,7 +111,7 @@
   <a :href="blog.link" target="blank" class=" italic text-2xl text-white font-bold text-opacity-70">{{blog.id}}. {{blog.title}}</a>
   </div>
   </div>
-  <div class="text-center py-8 text-opacity-60 h-24 text-white">&copy 2020, Dhanush Pothulapati</div>
+  <div class="text-center py-8 text-opacity-60 h-24 text-white">&copy 2021, Dhanush Pothulapati</div>
 </div>
 </template>
 <script>
