@@ -18,7 +18,7 @@
      <p class="text-xl text-opacity-80">A promising web developer</p>
      <br/>
      <br/>
-     <a href="https://drive.google.com/file/d/1TgkFtDkGgYCw9ugPuFIMYkL7GtPO3PFp/view?usp=sharing" target="blank" class="bg-blue-500 hover:bg-blue-600 focus:outline-none text-white font-bold py-2 px-4 rounded-xl shadow-lg">
+     <a href="https://drive.google.com/file/d/184qZuexZCV45YR_19KBKxJVAto0pexCi/view?usp=sharing" target="blank" class="bg-blue-500 hover:bg-blue-600 focus:outline-none text-white font-bold py-2 px-4 rounded-xl shadow-lg">
   Resume
 </a>
  </div>
@@ -145,6 +145,12 @@ export default {
          Description:'A React js based Event management application designed to keep track of upcoming movie screenings.',
          gitlink:'https://github.com/Dhanushreddy09/Event-Manager',
        },
+        {
+         id:4,
+         Name:'Netflix Wiki',
+         Description:'A JS based application which provides various info to clients regarding a given movie or a show hosted on netflix.',
+         gitlink:'https://github.com/Dhanushreddy09/netflix-wiki',
+       }
      ],
      blogs:[
        {
